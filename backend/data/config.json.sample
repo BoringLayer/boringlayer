@@ -1,0 +1,13 @@
+{
+    "TWITTER_API_KEY": "",
+    "TWITTER_API_SECRET": "",
+    "BEARER_TOKEN": "",
+    "ACCESS_TOKEN": "",
+    "ACCESS_TOKEN_SECRET": "",
+    "SUPABASE_URL": "",
+    "SUPABASE_API_KEY": "",
+    "API_CALLS": {
+        "MENTION_SEARCH": 0,
+        "MESSAGE_SEND": 0
+    }
+} 

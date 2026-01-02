@@ -1,0 +1,32 @@
+{
+    "USER_LOOKUP": {
+        "limit": 100,
+        "app_limit": 500,
+        "window": 86400000,
+        "counter": 0,
+        "app_counter": 0,
+        "endpoint": "/2/users",
+        "last_reset": 1744198937279,
+        "description": "Controllo utente: 100 per user/24h, 500 per app/24h"
+    },
+    "TWEET_REPLY": {
+        "limit": 15,
+        "app_limit": 15,
+        "window": 900000,
+        "counter": 0,
+        "app_counter": 0,
+        "endpoint": "/2/tweets",
+        "last_reset": 1744198937279,
+        "description": "Post risposta: 15 per user/15min, 15 per app/15min"
+    },
+    "MENTION_SEARCH": {
+        "limit": 60,
+        "app_limit": 60,
+        "window": 900000,
+        "counter": 1,
+        "app_counter": 1,
+        "endpoint": "/2/tweets/search/recent",
+        "last_reset": 1742891880157,
+        "description": "Controlla menzioni: 60 per user/15min, 60 per app/15min"
+    }
+}

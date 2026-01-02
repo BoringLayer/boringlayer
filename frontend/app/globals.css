@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-pattern {
+    background: linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+      linear-gradient(63deg, transparent 74%, #999 78%),
+      linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), #444;
+    background-size: 16px 48px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default !important;
+}
+
+html, 
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #000084;
+  overscroll-behavior-x: none;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 200, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 100% 50px;
+  animation: backgroundMove 20s linear infinite;
+  -webkit-overflow-scrolling: touch;
+}
+
+body > div {
+  margin: 0;
+  padding: 0;
+}
+
+#__next {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0;
+  padding: 32px;
+}
+
+@font-face {
+  font-family: "Courier New";
+  src: local("Courier New Bold"), local("CourierNewPS-BoldMT"), local("CourierNewPSMT-Bold");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --primary-blue: #000066;    /* Blu scuro */
+  --secondary-blue: #000033;  /* Blu più scuro */
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;  /* Riduce leggermente la dimensione del font su mobile */
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 875px) {
+  table {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+  }
+  
+  td, th {
+    padding: 0;
+  }
+}
+
+@keyframes backgroundMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100px; /* Aumenta questo valore per movimento più ampio */
+  }
+}
+
+/* Aggiungi questa regola dopo i selettori esistenti */
+button,
+a,
+[role="button"],
+[onclick],
+.clickable,
+tr[onclick],
+input[type="button"],
+input[type="submit"],
+div[onClick],
+span[onClick],
+td[onClick] {
+  cursor: pointer !important;
+}
+
