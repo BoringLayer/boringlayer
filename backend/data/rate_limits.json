@@ -16,17 +16,17 @@
         "counter": 0,
         "app_counter": 0,
         "endpoint": "/2/tweets",
-        "last_reset": 1744198937279,
+        "last_reset": 1767360763070,
         "description": "Post risposta: 15 per user/15min, 15 per app/15min"
     },
     "MENTION_SEARCH": {
         "limit": 60,
         "app_limit": 60,
         "window": 900000,
-        "counter": 1,
-        "app_counter": 1,
+        "counter": 0,
+        "app_counter": 0,
         "endpoint": "/2/tweets/search/recent",
-        "last_reset": 1742891880157,
+        "last_reset": 1767360763071,
         "description": "Controlla menzioni: 60 per user/15min, 60 per app/15min"
     }
 }
